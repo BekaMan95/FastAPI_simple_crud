@@ -3,6 +3,8 @@
 #### Simple crud api with [FastAPI](https://fastapi.tiangolo.com/)
 *implemented with database dependency injection for each route.*
 
+---
+
 #### Follow up
 * setup the environment
 
@@ -32,5 +34,38 @@
     uvicorn main:app --reload
     ```
 * test routes with the prefix http://localhost:8000/api
+
+---
+
+# API Documentation
+
+### Base URL http://localhost:8000/api
+
+
+---
+
+### **2. Endpoints Overview**
+
+#### Users
+
+| Method | Endpoint       | Description             |
+|--------|----------------|-------------------------|
+| GET    | `/users`       | Get a list of all users |
+| POST   | `/users`       | Create a new user       |
+| GET    | `/users/{id}`  | Get details of a user   |
+| PUT    | `/users/{id}`  | Update user details |
+| DELETE | `/users/{id}`  | Delete user           |
+
+#### Posts
+
+| Method | Endpoint         | Description                |
+|--------|------------------|----------------------------|
+| GET    | `/posts`      | Get a list of all posts |
+| POST   | `/posts`      | Create a new post       |
+| GET    | `/posts/{id}` | Get details of a post   |
+| PUT    | `/posts/{id}` | Update post details |
+| DELETE | `/posts/{id}` | Delete post           |
+
+---
 
 ### Have Fun!!
