@@ -1,4 +1,15 @@
-.__pycache__/
-.idea/
-.venv/
-.vscode/
+# Virtual environment
+venv/
+.env/
+
+# Byte-compiled / optimized / compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cache files
+*.log
+*.cache
+
+# Config files
+*.env
