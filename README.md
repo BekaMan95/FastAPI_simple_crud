@@ -1,6 +1,7 @@
 ## The Minimalist FastAPI
 
-* Simple crud api with [FastAPI](https://fastapi.tiangolo.com/)
+#### Simple crud api with [FastAPI](https://fastapi.tiangolo.com/)
+*implemented with database dependency injection for each route.*
 
 #### Follow up
 * setup the environment
