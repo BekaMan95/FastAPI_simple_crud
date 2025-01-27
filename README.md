@@ -23,7 +23,7 @@
     ```
 * install required libraries
     ```bash
-    pip install fastapi uvicorn sqlalchemy pymysql
+    pip install -r requirements.txt
     ```
 * create and set configurations (configure the database info in config.py)
     ```bash
