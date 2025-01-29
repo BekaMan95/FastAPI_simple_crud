@@ -46,6 +46,12 @@
 
 ### **2. Endpoints Overview**
 
+#### Auth
+
+| Method | Endpoint       | Description             |
+|--------|----------------|-------------------------|
+| POST   | `/auth/login`       | Get auth tokens         | 
+
 #### Users
 
 | Method | Endpoint       | Description             |
@@ -61,7 +67,7 @@
 | Method | Endpoint         | Description                |
 |--------|------------------|----------------------------|
 | GET    | `/posts`      | Get a list of all posts |
-| POST   | `/posts`      | Create a new post       |
+| POST (auth)  | `/posts`      | Create a new post       |
 | GET    | `/posts/{id}` | Get details of a post   |
 | PUT    | `/posts/{id}` | Update post details |
 | DELETE | `/posts/{id}` | Delete post           |
