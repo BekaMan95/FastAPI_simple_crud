@@ -24,7 +24,8 @@ DB_USERNAME = 'username'
 DB_PASSWORD = 'password'
 
 DEBUG = os.getenv('DEBUG', True)
-SECRET_KEY = os.getenv('SECRET_KEY', 'default-secret-key')
+SECRET_KEY = os.getenv('SECRET_KEY', 'everyoneknowsit')
+ALGORITHM = os.getenv('ALGORITHM', 'HS256')
 DATABASE_URL = os.getenv('DATABASE_URL', f'{DB_CONNECTION}+{DB_CONNECTION_LIB}://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_DATABASE}')
 
 # DATABASE_URL like "sqlite+pysqlite://username:password@localhost:3306/db_name"

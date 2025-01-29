@@ -2,12 +2,15 @@ from fastapi import APIRouter, HTTPException, status
 from models import PostBase
 import schema
 from database import db_dependency
+from auth import auth_dependency
 
 router = APIRouter()
 
 @router.post("/posts", status_code=status.HTTP_201_CREATED)
-async def create_post(post: PostBase, db: db_dependency):
-    db_post = schema.Post(**post.dict())
+async def create_post(post: PostBase, Auth: auth_dependency, db: db_dependency):
+    post = post.model_dump()
+    post['user_id'] = Auth['id']
+    db_post = schema.Post(**post)
     db.add(db_post)
     db.commit()
     return {
